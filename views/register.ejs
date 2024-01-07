@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseEase</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="https://images.unsplash.com/photo-1574607383476-f517f260d30b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D">
+</head>
+   
+</head>
+<body>
+    <div class="main3">
+        <nav>
+            <h1><i class="ri-menu-line"></i></h1>
+            <img src="https://i.pinimg.com/236x/57/ec/65/57ec6522d8e0c873e41ea828936b8398.jpg" alt="">
+            <ul>
+                <a href="/">Home</a>
+                <a href="/about">About Us</a>
+
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="dashboard">
+                <a href="/">Home</a>
+                <a href="/about">About Us</a>
+            </div>
+            <h2>Register</h2>
+            <br>
+            <form class="form" action="register" method="post">
+                <input type="text" class="input" placeholder="Enter your username" name="username" required>
+        
+                <input type="email" class="input" placeholder="Enter your email" name="email" required>
+               
+                <input type="password" class="input" placeholder="**********" name="password" required>
+              
+                <button>Submit</button>
+              </form>
+            
+            <!-- Registration Form -->
+           
+        
+            <!-- Login Link -->
+            <p>
+                Already have an account? <a href="/login">Login here</a>
+            </p>
+        </div>
+    </div>
+
+
+    
+    <script>
+
+        var dashboard =  document.querySelector(".dashboard")
+        var icon =  document.querySelector("h1")
+        var check = 0
+    
+        icon.addEventListener("click", function(){
+            if(check == 0){
+                dashboard.style.display = "flex"
+                icon.innerHTML =`<i class="ri-close-fill"></i>`                
+                check = 1
+            }else{
+                dashboard.style.display = "none"
+                icon.innerHTML =`<i class="ri-menu-line"></i>`
+                check = 0
+            }
+            
+        })
+    
+      </script>
+</body>
+</html>

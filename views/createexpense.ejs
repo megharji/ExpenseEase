@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseEase</title>
+    <link rel="stylesheet" href="/stylesheets/createexpense.css">
+    <link rel="icon" href="https://images.unsplash.com/photo-1574607383476-f517f260d30b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D">
+    
+</head>
+<body>
+    <div class="main3">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.pinimg.com/236x/57/ec/65/57ec6522d8e0c873e41ea828936b8398.jpg" alt="">
+            </div>
+            <ul class="nav-list">
+                <a href="/profile">Profile</a>
+                <a href="/about">About Us</a>
+                <a href="/reset">Reset Password</a>
+                <a href="/signout">Signout</a>
+            </ul>
+        </nav>
+    
+        
+    
+        <div class="container">
+            <h1>Expense</h1>
+    
+            <form class="form" action="/createexpense" method="POST">
+                <input class="input" type="text" name="title" placeholder="Title">
+                <input class="input" type="number" name="amount" placeholder="Enter Amount" />
+                <input class="input" type="text" name="category" placeholder="Category" />
+                <input class="input" type="text" name="description" placeholder="Description" />
+                <select class="input" name="paymentmode">
+                    <option value="Cash">Cash</option>
+                    <option value="Online">Online</option>
+                    <option value="Cheque">Cheque</option>
+                </select>
+                <button>Add Expense</button>
+           
+            </form>
+        </div>
+    </div>
+   
+
+
+   
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseEase</title>
+    <link rel="stylesheet" href="/stylesheets/about.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="https://images.unsplash.com/photo-1574607383476-f517f260d30b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D">
+</head>
+
+<body>
+    <div class="main1">
+
+        <nav>
+            <h1><i class="ri-menu-line"></i></h1>
+
+            <img src="https://i.pinimg.com/236x/57/ec/65/57ec6522d8e0c873e41ea828936b8398.jpg" alt="">
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+        </nav>
+        
+        <div class="pg1">
+            <div class="dashboard">
+                <a href="/">Home</a>
+            </div>
+            <h1>About Us</h1>
+            <p> 
+                At ExpenseEase, we believe that managing your finances 
+                should be seamless, intuitive, and empowering. Our platform is designed
+                with you in mind, offering a comprehensive solution to track your expenses,
+                budget effectively, and gain control over your financial journey.
+                Our mission is to simplify the way you manage your money. We understand 
+                that everyone's financial journey is unique, and that's why we've created 
+                a user-friendly and versatile expense tracker. Whether you're an individual
+                striving to save, a family managing shared expenses, or a business optimizing 
+                financial processes, ExpenseEase is here to support you.
+                Join the growing community of individuals and businesses taking
+                control of their finances with ExpenseEase. 
+                Register today and embark on a journey toward financial well-being.
+            </p>
+            <a class="btn" href="/register">Register</a>
+
+        </div>
+   
+    </div>
+
+
+    <script>
+
+        var dashboard =  document.querySelector(".dashboard")
+        var icon =  document.querySelector("h1")
+        var check = 0
+    
+        icon.addEventListener("click", function(){
+            if(check == 0){
+                dashboard.style.display = "flex"
+                icon.innerHTML =`<i class="ri-close-fill"></i>`                
+                check = 1
+            }else{
+                dashboard.style.display = "none"
+                icon.innerHTML =`<i class="ri-menu-line"></i>`
+                check = 0
+            }
+            
+        })
+    
+      </script>
+</body>
+</html>

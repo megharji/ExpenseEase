@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseEase</title>
+    <link rel="stylesheet" href="/stylesheets/verify.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="https://images.unsplash.com/photo-1574607383476-f517f260d30b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D">
+</head>
+
+<body>
+   
+    <div class="main3">
+        <nav>
+            <h1><i class="ri-menu-line"></i></h1>
+
+            <img src="https://i.pinimg.com/236x/57/ec/65/57ec6522d8e0c873e41ea828936b8398.jpg" alt="">
+           
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="dashboard">
+                <a href="/">Home</a>
+            </div>
+            <h2>Verify</h2>
+            <form class="form" action="/forget/<%= id%>" method="POST">
+                <input class="input" type="number" name="token" placeholder="Otp here..." />
+                <input class="input" type="password" name="newpassword" placeholder="New Password" />
+                <button>Verify</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var dashboard =  document.querySelector(".dashboard")
+        var icon =  document.querySelector("h1")
+        var check = 0
+    
+        icon.addEventListener("click", function(){
+            if(check == 0){
+                dashboard.style.display = "flex"
+                icon.innerHTML =`<i class="ri-close-fill"></i>`                
+                check = 1
+            }else{
+                dashboard.style.display = "none"
+                icon.innerHTML =`<i class="ri-menu-line"></i>`
+                check = 0
+            }
+            
+        })
+    
+      </script>
+</body>
+</html>

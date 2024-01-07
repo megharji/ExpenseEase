@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseEase</title>
+    
+</head>
+
+<body>
+    <nav>
+        <% if(!admin) { %>
+    
+            <a href="/">Home</a>
+        
+            <% } else { %>
+        
+            <a href="/profile">Home</a>
+            <a href="/reset">Reset Password</a>
+            <a href="/signout">Signout</a>
+        
+            <% }%>
+            <a href="/about">About Us</a>
+    </nav>
+</body>
+</html>
+
+
